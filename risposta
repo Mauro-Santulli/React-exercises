@@ -1,0 +1,10 @@
+What happens if no name prop is passed to the Welcome component? 
+Se non viene passata la prop name nel componente Welcome, semplicemente renderizzerà solo la stringa "Welcome"
+
+
+Can you set a default value for the name prop?
+Si, è possibile settare un valore di default tramite il conditional rendering
+oppure settando nel componente Welcome dei parametri di default,
+tramite nomeComponente.defaultProps ={
+nomeProps : valoreDefault
+}
