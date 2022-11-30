@@ -11,8 +11,13 @@ export default function App() {
             <InteractiveWelcome/>
             <Login/>
             <Counter/>
-            <TodoList render={item=>{
-                return <ul>{item}</ul>
+            <TodoList render={(items, remove)=>{
+                return (
+                <ul>
+                {items.map((item, index)=>
+                <li key={item+index}>{item}<button onClick={remove}></button></li>)}
+                </ul>
+                )
             }}/>
         </div>
     )
